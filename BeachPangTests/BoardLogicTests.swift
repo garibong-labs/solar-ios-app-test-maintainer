@@ -165,10 +165,16 @@ final class BoardLogicTests: XCTestCase {
         for col in 0..<BoardSpec.cols { XCTAssertNil(step.board[4][col]) }
     }
 
-    func testClears3x3AreaForBombClippedAtEdges() {
+    func testClears5x5AreaForBomb() {
+        let board = boardFromKinds(noMatchGrid(), overrides: [(row: 3, col: 3, special: .bomb)])
+        let step = activateSpecial(board, at: Pos(row: 3, col: 3))
+        XCTAssertEqual(step.cleared.count, 25)
+    }
+
+    func testClears5x5AreaForBombClippedAtEdges() {
         let board = boardFromKinds(noMatchGrid(), overrides: [(row: 0, col: 0, special: .bomb)])
         let step = activateSpecial(board, at: Pos(row: 0, col: 0))
-        XCTAssertEqual(step.cleared.count, 4)
+        XCTAssertEqual(step.cleared.count, 9)
     }
 
     func testDoesNothingForANormalTile() {
