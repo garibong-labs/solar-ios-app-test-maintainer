@@ -176,8 +176,8 @@ private func specialBlast(_ board: BoardGrid, _ pos: Pos, _ special: SpecialKind
     case .rocketV:
         for row in 0..<BoardSpec.rows { cells.append(Pos(row: row, col: pos.col)) }
     case .bomb:
-        for row in (pos.row - 1)...(pos.row + 1) {
-            for col in (pos.col - 1)...(pos.col + 1) where inBounds(row, col) {
+        for row in (pos.row - 2)...(pos.row + 2) {
+            for col in (pos.col - 2)...(pos.col + 2) where inBounds(row, col) {
                 cells.append(Pos(row: row, col: col))
             }
         }
