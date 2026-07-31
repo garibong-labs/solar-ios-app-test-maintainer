@@ -55,7 +55,7 @@ DESTINATION='platform=iOS Simulator,name=iPhone 17' scripts/test.sh
 
 ## 한계
 
-- 유효한 Solar 독립 실행은 1회입니다. 초기 반복 검증에서 baseline이 아닌 이미 복구된 체크아웃을 재사용한 결과는 독립 실행으로 집계하지 않았습니다.
+- 유효한 Solar 독립 실행은 1회입니다.
 - GPT-5.5 실행은 정성적 참고 1회로, 모델 간 우열이나 통계적 유의성을 주장할 근거가 되지 않습니다.
 
 ## 출처 (Provenance)
