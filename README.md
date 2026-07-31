@@ -60,7 +60,7 @@ DESTINATION='platform=iOS Simulator,name=iPhone 17' scripts/test.sh
 
 ## 출처 (Provenance)
 
-BeachPang 앱 소스, 테스트, Xcode 프로젝트는
+BeachPang 앱 소스, 테스트, Xcode 프로젝트는 비공개 원본 저장소
 [Hamjoon/tile-matching-ios](https://github.com/Hamjoon/tile-matching-ios)의
 커밋 `cd9789b83bc6c0f6a791c0ebd0a42f4407ff25cc`에서 수정 없이 가져왔으며,
 원본 저장소의 README만 [docs/BeachPang-README.md](docs/BeachPang-README.md)로 옮겼습니다.
